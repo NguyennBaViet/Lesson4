@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* Tag01 Tag02 - css cho giá trị có tag02 nằm trong tag01 */
+        section div{
+            background-color: aqua;
+        }
+        section p{
+            color: crimson;
+        }
+        /* Tag01, Tag02 - css cho cả tag01 và tag02 */
+        h2,h3{
+            color: darkgreen;
+            background-color: rgb(236, 132, 153);
+        }
+        /* Tag01+Tag02 - css cho các thành vần tag02 kế sau tag01 */
+        h3+div{
+            background-color: goldenrod;
+        }
+        div+div{
+            border: 2px solid brown;
+        }
+        /*Tag01>Tag02 - css cho các thành phần tag02 là thành phần con của tag01 */
+        section>h3{
+            border: solid red 4px;
+        }
+        /* first-child */
+        section:first-child{
+            color: rgb(195, 93, 26) !important;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h2>Tag01 Tag02</h2>
+            <p>
+                Những dòng chữ nguệch ngoạc, viết vội này là cuộc trao đổi giữa tôi và một chú Grab. 
+Chú ấy chừng 50, 60 tuổi gì đó. 
+Địa chỉ, danh tính? Tôi không rõ. 
+Vì chú ấy hình như không nghe được, còn nói, chắc chắn là không. 
+Hỏi đường hay nói chuyện gì, chú ấy đều ra hiệu tôi ghi ra giấy. Trí nhớ, cũng không được tốt nắm thì phải, vì địa chỉ 360 Đê La Thành, tôi đưa điện thoại chú ấy xem tới 3 lần, nhưng vẫn không nhớ được.
+Quãng đường từ Phạm Văn Đồng đến Đê La Thành vì thế rất xa, tới gần Big C Thăng Long, rồi vòng thế nào lại về Cầu Giấy. 
+Và quãng đường ấy, có giá 40.000 đồng. 
+Một chiều Thu với nhiều cảm xúc thật hỗn độn!
+            </p>
+        </div>
+    </section>
+    <div>
+        <h3>Tag01, Tag02</h3>
+        <p>
+            Những dòng chữ nguệch ngoạc, viết vội này là cuộc trao đổi giữa tôi và một chú Grab. 
+Chú ấy chừng 50, 60 tuổi gì đó. 
+Địa chỉ, danh tính? Tôi không rõ. 
+Vì chú ấy hình như không nghe được, còn nói, chắc chắn là không. 
+Hỏi đường hay nói chuyện gì, chú ấy đều ra hiệu tôi ghi ra giấy. Trí nhớ, cũng không được tốt nắm thì phải, vì địa chỉ 360 Đê La Thành, tôi đưa điện thoại chú ấy xem tới 3 lần, nhưng vẫn không nhớ được.
+Quãng đường từ Phạm Văn Đồng đến Đê La Thành vì thế rất xa, tới gần Big C Thăng Long, rồi vòng thế nào lại về Cầu Giấy. 
+Và quãng đường ấy, có giá 40.000 đồng. 
+Một chiều Thu với nhiều cảm xúc thật hỗn độn!
+        </p>
+    </div>
+    <div>
+        <h3>Tag01+Tag02</h3>
+        <div>
+            Những dòng chữ nguệch ngoạc, viết vội này là cuộc trao đổi giữa tôi và một chú Grab. 
+Chú ấy chừng 50, 60 tuổi gì đó. 
+Địa chỉ, danh tính? Tôi không rõ. 
+Vì chú ấy hình như không nghe được, còn nói, chắc chắn là không. 
+Hỏi đường hay nói chuyện gì, chú ấy đều ra hiệu tôi ghi ra giấy. Trí nhớ, cũng không được tốt nắm thì phải, vì địa chỉ 360 Đê La Thành, tôi đưa điện thoại chú ấy xem tới 3 lần, nhưng vẫn không nhớ được.
+Quãng đường từ Phạm Văn Đồng đến Đê La Thành vì thế rất xa, tới gần Big C Thăng Long, rồi vòng thế nào lại về Cầu Giấy. 
+Và quãng đường ấy, có giá 40.000 đồng. 
+Một chiều Thu với nhiều cảm xúc thật hỗn độn!
+        </div>
+        <div>
+            Những dòng chữ nguệch ngoạc, viết vội này là cuộc trao đổi giữa tôi và một chú Grab. 
+Chú ấy chừng 50, 60 tuổi gì đó. 
+Địa chỉ, danh tính? Tôi không rõ. 
+Vì chú ấy hình như không nghe được, còn nói, chắc chắn là không. 
+Hỏi đường hay nói chuyện gì, chú ấy đều ra hiệu tôi ghi ra giấy. Trí nhớ, cũng không được tốt nắm thì phải, vì địa chỉ 360 Đê La Thành, tôi đưa điện thoại chú ấy xem tới 3 lần, nhưng vẫn không nhớ được.
+Quãng đường từ Phạm Văn Đồng đến Đê La Thành vì thế rất xa, tới gần Big C Thăng Long, rồi vòng thế nào lại về Cầu Giấy. 
+Và quãng đường ấy, có giá 40.000 đồng. 
+Một chiều Thu với nhiều cảm xúc thật hỗn độn!
+        </div>
+    </div>
+    <section>
+        <h3>Tag01>Tag02</h3>
+        <p>
+            Nội dung Tag01>Tag02
+        </p>
+        <div>
+            <h3>Nội dung tag01>tag02</h3>
+
+        </div>
+    </section>
+</body>
+</html>

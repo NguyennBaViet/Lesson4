@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            width: 250px;
+            background:darkgrey;
+        }
+        nav ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li{
+            border-bottom: solid dimgray 1px;
+            position: relative;
+        }
+        nav ul li>ul{
+            position: absolute;
+            margin-left: 250px;
+            /* margin-top: -38.5px; */
+            width: 200px;
+            background: dimgray;
+            top: 0;
+            visibility: hidden;
+        }
+        nav ul li> ul li{
+            border-bottom: solid 1px dimgray;
+        }
+        nav ul li>ul li>ul{
+            margin-left: 200px;
+            /* margin-top: px; */
+        }
+        nav ul li>a{
+            text-decoration: none;
+            display: block;
+            width: 85%;
+            padding: 10px 15px;
+        }
+        .selected,
+        nav ul li a:hover{
+            background: red;
+            color:darkmagenta;
+        }
+        nav ul li:hover>ul{
+            visibility: visible;
+        }
+        nav ul li:hover>ul li>ul{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="selected">Laptop Dell</a>
+                <ul>
+                    <li><a href="">Dell Inspiron</a></li>
+                    <li><a href="">Dell Vostro</a></li>
+                    <li><a href="">Dell XPS</a></li>
+                    <li><a href="">Dell Latitude</a></li>
+                    <li><a href="">Alienware</a>
+                        <ul>
+                            <li><a href="">2G</a></li>
+                            <li><a href="">4G</a></li>
+                            <li><a href="">6G</a></li>
+                            <li><a href="">16G</a></li>
+                            <li><a href="">32G</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Lapop HP</a></li>
+            <li><a href="#">Laptop Lenovo</a></li>
+            <li><a href="#">Laptop Acer</a></li>
+            <li><a href="#">Laptop Asus</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cách sử dụng CSS</title>
+    <!-- CSS trong file HTML - thẻ style -->
+     <style>
+        /* có 4 cách tương tác với thẻ html */
+        /* tương tác với tên thẻ */
+        h3{
+            color:cornflowerblue;
+        }
+        h2{
+            color: lawngreen;
+        }
+        /* tương tác với tên id của thẻ */
+        #css-in-file{
+            background-color: darkred;
+        }
+        /* tương tác với class của thẻ */
+        .bg-blue{
+            background-color: blueviolet;
+        }
+        /* tương tác với tên thuộc tính */
+        input[type="text"]{
+            border: 6px solid black;
+        }
+
+     </style>
+     <!-- CSS ngoài file HTML - link đến file css -->
+      <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Có 3 cách sử dụng CSS -->
+     <!-- Cách 1: CSS trực tiếp trên thẻ HTML -->
+     <h2 style="color: aqua;">CSS trực tiếp trên thẻ HTML</h2>
+     <!-- Cách 2: CSS trong thẻ HTML -->
+      <h3 id="css-in-file">CSS trong file HTML</h3>
+      <!-- Cách 3: CSS ngoài file HTML - link đến file css -->
+       <div>
+        <h3 class="bg-blue">CSS ngoài file HTML - link đến file CSS</h3>
+        <p class="bg-blue">
+            Những dòng chữ nguệch ngoạc, viết vội này là cuộc trao đổi giữa tôi và một chú Grab. 
+Chú ấy chừng 50, 60 tuổi gì đó. 
+Địa chỉ, danh tính? Tôi không rõ. 
+Vì chú ấy hình như không nghe được, còn nói, chắc chắn là không. 
+Hỏi đường hay nói chuyện gì, chú ấy đều ra hiệu tôi ghi ra giấy. Trí nhớ, cũng không được tốt nắm thì phải, vì địa chỉ 360 Đê La Thành, tôi đưa điện thoại chú ấy xem tới 3 lần, nhưng vẫn không nhớ được.
+Quãng đường từ Phạm Văn Đồng đến Đê La Thành vì thế rất xa, tới gần Big C Thăng Long, rồi vòng thế nào lại về Cầu Giấy. 
+Và quãng đường ấy, có giá 40.000 đồng. 
+Một chiều Thu với nhiều cảm xúc thật hỗn độn!
+        </p>
+       </div>
+       <form action="">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username"><br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+       </form>
+       <a href="#">Trang test</a>
+</body>
+</html>
